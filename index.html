@@ -11,8 +11,109 @@
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/PizzaMakerv3.json", {onProgress: UnityProgress});
     </script>
+    
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sacramento&display=swap"
+    rel="stylesheet">
+    
   </head>
+  
+  
+  
+<style>
+  body {
+    background-color: #231F20;
+  }
+
+  #name_style {
+    font-family: 'Sacramento', cursive;
+    font-size: 96px;
+    padding-left: 64px;
+    color: #FFFFFF;
+
+  }
+
+  #cover_block {
+    background-image: url('background_pic.png');
+    background-size: cover;
+    margin: 0px 0px 0px 0px;
+    z-index: index -1;
+  }
+
+  #nav_bar {
+    display: flex;
+  }
+
+  #nav_bar>div {
+    padding: 24px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+  }
+
+  .heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    padding-left: 64px;
+    color: #FFFFFF;
+  }
+</style>
+
+  
   <body>
+   
+  <div id="cover_block">
+
+    <div id="nav_bar">
+
+      <!-- Navigation Bar -->
+
+      <div>About Us</div>
+
+      <div>Contact</div>
+
+      <div>Specials</div>
+
+      <div>Order</div>
+
+    </div>
+
+    <!-- Main Part -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p id="name_style">Pizza Maker</p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+  </div>
+
+  <div>
+
+    <!-- About Us -->
+
+    <p class="heading">About Us</p>
+
+  </div>
+    
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
