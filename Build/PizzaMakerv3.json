@@ -1,0 +1,17 @@
+{
+"companyName": "DefaultCompany",
+"productName": "FoodMaker",
+"productVersion": "0.1",
+"dataUrl": "PizzaMakerv3.data.unityweb",
+"wasmCodeUrl": "PizzaMakerv3.wasm.code.unityweb",
+"wasmFrameworkUrl": "PizzaMakerv3.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "PizzaMakerv3.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.12f1"
+}
