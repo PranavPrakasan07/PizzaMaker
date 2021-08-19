@@ -25,7 +25,15 @@
   body {
     background-color: #231F20;
   }
-
+  
+ a,
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+  
   #name_style {
     font-family: 'Sacramento', cursive;
     font-size: 96px;
@@ -77,17 +85,20 @@
    
   <div id="cover_block">
 
+
     <div id="nav_bar">
 
       <!-- Navigation Bar -->
 
-      <div>About Us</div>
+      <div><a href="#about_us_anchor">About Us</a></div>
 
-      <div>Contact</div>
+      <div><a href="#order_anchor">Order</a></div>
 
       <div>Specials</div>
 
-      <div>Order</div>
+      <div>Contact</div>
+
+      <div><a href="login.html">Login</a></div>
 
     </div>
 
@@ -118,17 +129,43 @@
 
   </div>
 
-  <div>
+  <div name="about_us_anchor">
 
     <!-- About Us -->
 
-    <p class="heading">About Us</p>
+    <p class="heading"><a name="about_us_anchor">About Us</a></p>
     <br>
     <p class="block_content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra iaculis bibendum proin commodo vel nisi, rutrum eget. Aliquam nascetur nunc, parturient tristique egestas. Diam cras non, tincidunt leo ac. Id malesuada sit lectus sodales cras imperdiet massa venenatis. Ac at consectetur diam pretium, tincidunt. Aliquam lorem sit velit ultrices ipsum morbi id dis. Enim quis sit sed faucibus. Integer morbi cras adipiscing metus, consectetur id accumsan. Sed lorem scelerisque interdum egestas tortor duis integer.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra iaculis bibendum proin commodo vel nisi, rutrum
+      eget. Aliquam nascetur nunc, parturient tristique egestas. Diam cras non, tincidunt leo ac. Id malesuada sit
+      lectus sodales cras imperdiet massa venenatis. Ac at consectetur diam pretium, tincidunt. Aliquam lorem sit velit
+      ultrices ipsum morbi id dis. Enim quis sit sed faucibus. Integer morbi cras adipiscing metus, consectetur id
+      accumsan. Sed lorem scelerisque interdum egestas tortor duis integer.
     </p>
     <br>
 
+    <p class="heading"><i><strong>PizzaMaker?</strong></i></p>
+    <br>
+
+    <div class="block_content">
+
+      <font size="6" face="Sacramento">What?</font>
+      <ul>
+        <li>Get Quality Pizzas</li>
+        <li>Low rates</li>
+        <li>You choose your topping realtime</li>
+
+      </ul>
+
+      <br>
+
+      <font size="6" face="Sacramento">Why?</font>
+      <ol>
+        <li>You get what you make</li>
+        <li>Hot to Home</li>
+      </ol>
+      <br>
+    </div>
   </div>
     
      <p id="name_style">Make your Pizza!</p>
