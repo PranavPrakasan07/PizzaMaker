@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<!-- Till 19.08.2021 -->
+<!-- 
+    Pranav Prakasan
+    19BCI0007
+    Till 19.08.2021 
+-->
 
 <head>
     <meta charset="utf-8">
@@ -83,9 +87,7 @@
 
 <body>
 
-    <p class="block_content" align="center">Welcome to <font face="Sacramento" size="8">PizzaMaker</font></p>
-
-    <div class="block_content" align="center" >
+    <div class="block_content" align="center">
 
         <!-- Form -->
         <form action="/action.php" style="vertical-align: middle;">
@@ -127,14 +129,67 @@
                 </tr>
 
                 <tr>
-                    <td>Address</td>
-                    <td> 
-                        <textarea cols="20" name="comments" rows="5">Address</textarea><br />
+                    <td>
+                        <label name="interests">Interests</label>
                     </td>
-                 </tr>
+                    <td>
+                        <table cellspacing="10">
+                            <tr>
+                                <td><input type="checkbox" id="nveg"> Non-Veg</td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox" id="veg"> Veg</td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox" id="exo"> Exotic</td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox" id="aut"> Authentic</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="mex"> Mexican</td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <label name="gender">Gender</label>
+                    </td>
+                    <td>
+                        <table cellspacing="10">
+                            <tr>
+                                <td><input type="radio" id="male"> Male</td>
+                            </tr>
+                            <tr>
+                                <td> <input type="radio" id="female"> Female</td>
+                            </tr>
+                            <tr>
+                                <td> <input type="radio" id="nonb"> Non-binary</td>
+                            </tr>
+                            <tr>
+                                <td> <input type="radio" id="nog"> Prefer not to say</td>
+                            </tr>
+                            
+                        </table>
+
+                    </td>
+                </tr> 
 
                 <tr>
-                   <center><td> <input type="submit" value="Login"></td></center>
+                    <td>Address</td>
+                    <td>
+                        <textarea cols="20" name="comments" rows="5">Address</textarea><br />
+                    </td>
+                </tr>
+
+                <tr align="center">
+                    <center>
+                        <td colspan="2"> <input type="submit" value="Login"></td>
+                    </center>
                 </tr>
 
             </table>

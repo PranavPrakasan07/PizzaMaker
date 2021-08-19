@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- 
+    Pranav Prakasan
+    19BCI0007
+    Till 19.08.2021 
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Login</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/PizzaMakerv3.json", { onProgress: UnityProgress });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+
+<style>
+    body {
+        background-color: #231F20;
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #name_style {
+        font-family: 'Sacramento', cursive;
+        font-size: 96px;
+        padding-left: 64px;
+        color: #FFFFFF;
+
+    }
+
+    #cover_block {
+        background-image: url('background_pic.png');
+        background-size: cover;
+        margin: 0px 0px 0px 0px;
+        z-index: index -1;
+    }
+
+    #nav_bar {
+        display: flex;
+    }
+
+    #nav_bar>div {
+        padding: 24px;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        color: #FFFFFF;
+    }
+
+    .heading {
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px;
+        padding-left: 64px;
+        color: #FFFFFF;
+    }
+
+    .block_content {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        padding-left: 96px;
+        padding-right: 96px;
+
+        color: #FFFFFF;
+    }
+</style>
+
+
+<body>
+
+    <p class="block_content" align="center">Welcome to
+        <font face="Sacramento" size="8">
+            PizzaMaker
+        </font>
+    </p>
+
+    <table cellspacing="10" class="block_content" width="100%" align="center">
+        <tr>
+            <td align="center">Login</td>
+            <td align="center">Signup</td>
+        </tr>
+    </table>
+
+    <center>
+        <iframe src="login.html" width="800" height="600"></iframe>
+    </center>
+
+    <br>
+
+    <hr>
+    <br>
+    <div align="center" class="block_content">Made by Pranav Prakasan, 19BCI0007</div>
+    <br>
+
+</body>
+
+</html>
