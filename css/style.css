@@ -1,0 +1,60 @@
+
+  body {
+    background-color: #231F20;
+  }
+
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #name_style {
+    font-family: 'Sacramento', cursive;
+    font-size: 96px;
+    padding-left: 64px;
+    color: #FFFFFF;
+
+  }
+
+  #cover_block {
+    background-image: url('./images/background_pic.png');
+    background-size: cover;
+    margin: 0px 0px 0px 0px;
+    z-index: index -1;
+  }
+
+  #nav_bar {
+    display: flex;
+  }
+
+  #nav_bar>div {
+    padding: 24px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+  }
+
+  .heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    padding-left: 64px;
+    color: #FFFFFF;
+  }
+
+  .block_content {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding-left: 96px;
+    padding-right: 96px;
+
+    color: #FFFFFF;
+  }
+
+/*   
+   26-08-2021
+   Pranav Prakasan
+   19BCI0007
+ */
