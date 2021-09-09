@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sacramento&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 
 </head>
@@ -37,23 +37,52 @@
         </font>
     </p>
 
-    <table cellspacing="10" class="block_content" width="100%" align="center">
-        <tr>
-            <td align="center">Login</td>
-            <td align="center">Signup</td>
-        </tr>
-    </table>
-
-    <center>
-        <iframe src="login.html" width="800" height="600"></iframe>
-    </center>
-
     <br>
 
     <hr>
     <br>
     <div align="center" class="block_content">Made by Pranav Prakasan, 19BCI0007</div>
     <br>
+    
+    <center>
+        <table class="block_content" style="padding:50px">
+
+            <tr id="phone" onclick="callPhone()">
+                <td style="padding:25px">Phone : </td>
+                <td>+91 1223344556</td>
+            </tr>
+            <tr id="email" onclick="sendEmail()">
+                <td style="padding:25px">Email :</td>
+                <td>contact@pizzamaker.com</td>
+            </tr>
+            <tr>
+                <td style="padding:25px">Address :</td>
+                <td>Lorem Ipsum 2nd Street, Opposite Building, India</td>
+            </tr>
+            
+        </table>
+    </center>
+
+    <script>
+
+
+
+        function sendEmail() {
+            var row = document.getElementById("email");
+            row.style.color = "#00B2FF";   
+            
+            window.alert("Send email to PizzaMaker?");
+
+        }
+
+        function callPhone() {
+            var row = document.getElementById("phone");
+            row.style.color = "#00B2FF";   
+            
+            window.alert("Call PizzaMaker?");
+        }
+
+    </script>
 
 </body>
 

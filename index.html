@@ -1,90 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>PizzaMaker</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/PizzaMakerv3.json", {onProgress: UnityProgress});
-    </script>
-    
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>PizzaMaker</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/PizzaMakerv3.json", { onProgress: UnityProgress });
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sacramento&display=swap"
     rel="stylesheet">
-    
-  </head>
-  
-  
-  
-<style>
-  body {
-    background-color: #231F20;
-  }
-  
- a,
-  a:hover,
-  a:focus,
-  a:active {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  #name_style {
-    font-family: 'Sacramento', cursive;
-    font-size: 96px;
-    padding-left: 64px;
-    color: #FFFFFF;
 
-  }
+  <link rel="stylesheet" href="./css/style.css">
 
-  #cover_block {
-    background-image: url('background_pic.png');
-    background-size: cover;
-    margin: 0px 0px 0px 0px;
-    z-index: index -1;
-  }
 
-  #nav_bar {
-    display: flex;
-  }
+</head>
 
-  #nav_bar>div {
-    padding: 24px;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    color: #FFFFFF;
-  }
+<body>
 
-  .heading {
-    font-family: 'Poppins', sans-serif;
-    font-size: 28px;
-    padding-left: 64px;
-    color: #FFFFFF;
-  }
-  
-   .block_content {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    padding-left: 96px;
-    padding-right: 96px;
-
-    color: #FFFFFF;
-  }
-
-  
-  
-</style>
-
-  
-  <body>
-   
   <div id="cover_block">
-
 
     <div id="nav_bar">
 
@@ -96,7 +37,7 @@
 
       <div>Specials</div>
 
-      <div>Contact</div>
+      <div><a href="contact.html">Contact</a></div>
 
       <div><a href="login_signin_frame.html">Login</a></div>
 
@@ -167,29 +108,38 @@
       <br>
     </div>
   </div>
-    
-     <p id="name_style">Make your Pizza!</p>
 
-    
-   <center>
+  <p id="name_style"><a name="order_anchor">Make your Pizza!</a></p>
+
+
+  <!-- <center>
     <div>
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
       </div>
     </div>
-   </center>
-    
-    <br>
-    
-    <div>
-      <center>
-      <p class="block_content">Press 'R' to rotate, 'Shift + R' to rotate faster, 'Alt + R' to invert rotation direction</p>
-      </center>
-        </div>
-      
-     <hr>
+  </center> -->
+
+  <div>
+    <div style="width: 960px; height: 600px; color: #212121;"></div>
+    <div class="footer">
+    </div>
+  </div>
+
+  <br>
+
+  <div>
+    <center>
+      <p class="block_content">Press 'R' to rotate, 'Shift + R' to rotate faster, 'Alt + R' to invert rotation
+        direction
+      </p>
+    </center>
+  </div>
+
+  <hr>
   <div align="center" class="block_content">Made by Pranav Prakasan, 19BCI0007</div>
 
 
-  </body>
+</body>
+
 </html>

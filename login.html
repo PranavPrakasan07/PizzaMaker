@@ -24,73 +24,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sacramento&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="./css/style.css">
+
+
 </head>
-
-
-
-<style>
-    body {
-        background-color: #231F20;
-    }
-
-    a,
-    a:hover,
-    a:focus,
-    a:active {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    #name_style {
-        font-family: 'Sacramento', cursive;
-        font-size: 96px;
-        padding-left: 64px;
-        color: #FFFFFF;
-
-    }
-
-    #cover_block {
-        background-image: url('background_pic.png');
-        background-size: cover;
-        margin: 0px 0px 0px 0px;
-        z-index: index -1;
-    }
-
-    #nav_bar {
-        display: flex;
-    }
-
-    #nav_bar>div {
-        padding: 24px;
-        font-size: 16px;
-        font-family: 'Poppins', sans-serif;
-        color: #FFFFFF;
-    }
-
-    .heading {
-        font-family: 'Poppins', sans-serif;
-        font-size: 28px;
-        padding-left: 64px;
-        color: #FFFFFF;
-    }
-
-    .block_content {
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
-        padding-left: 96px;
-        padding-right: 96px;
-
-        color: #FFFFFF;
-    }
-</style>
-
 
 <body>
 
     <div class="block_content" align="center">
 
         <!-- Form -->
-        <form action="/action.php" style="vertical-align: middle;">
+        <form action="#" style="vertical-align: middle;" name="loginForm">
             <table border="0" cellspacing="50">
                 <tr>
                     <td>
@@ -154,7 +98,7 @@
                     </td>
                 </tr>
 
-                
+
                 <tr>
                     <td>
                         <label name="gender">Gender</label>
@@ -173,11 +117,11 @@
                             <tr>
                                 <td> <input type="radio" id="nog"> Prefer not to say</td>
                             </tr>
-                            
+
                         </table>
 
                     </td>
-                </tr> 
+                </tr>
 
                 <tr>
                     <td>Address</td>
@@ -188,7 +132,7 @@
 
                 <tr align="center">
                     <center>
-                        <td colspan="2"> <input type="submit" value="Login"></td>
+                        <td colspan="2"> <input type="submit" onclick="validateForm()" value="Login"></td>
                     </center>
                 </tr>
 
@@ -196,6 +140,60 @@
         </form>
 
     </div>
+
+    <script>
+
+        function validateForm() {
+
+            var correctEntries = 4;
+
+            var first_name = document.loginForm.fname.value;
+            var last_name = document.loginForm.lname.value;
+            var email = document.loginForm.email.value;
+            var password = document.loginForm.password.value;
+
+            if (first_name == null) {
+                window.alert("Please fill your name!");
+            } else {
+                correctEntries--;
+            }
+
+            if (last_name == null) {
+                correctEntries--;
+            }else {
+                correctEntries--;
+            }
+
+            if (email == null) {
+                window.alert("Please fill your email!");
+                correctEntries--;
+
+            }else {
+                correctEntries--;
+            }
+
+            if (password == null) {
+                window.alert("Please your password!");
+                correctEntries--;
+
+            }else if (password.length < 6) {
+                window.alert("Your password is too short!");
+                correctEntries--;
+
+            }else {
+                correctEntries--;
+            }
+
+            if (correctEntries == 0) {
+                window.alert("Hi " + first_name + last_name + "!");
+
+            } else {
+                ;
+            }
+
+        }
+
+    </script>
 
 </body>
 
