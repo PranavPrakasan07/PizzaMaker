@@ -20,7 +20,7 @@
   }
 
   #cover_block {
-    background-image: url('./images/background_pic.png');
+    background-image: url('../images/background_pic.png');
     background-size: cover;
     margin: 0px 0px 0px 0px;
     z-index: index -1;
